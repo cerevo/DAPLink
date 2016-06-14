@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
- 
+
 from __future__ import absolute_import
 
 from time import sleep
@@ -114,6 +114,10 @@ def test_hid(workspace, parent_test):
             addr = 0x10000001
             size = 0x502
             addr_flash = 0x4000
+        elif target_type == "tz10xx":
+            addr = 0x20000001
+            size = 0x502
+            addr_flash = 0x00000000
         else:
             raise Exception("A board is not supported by this test script.")
 

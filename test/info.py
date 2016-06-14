@@ -15,7 +15,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
- 
+
 from __future__ import absolute_import
 
 # Add new HICs here
@@ -60,18 +60,19 @@ FIRMWARE_NAME_TO_BOARD_ID = {
     'lpc11u35_arm_watch_efm32_if': 0x5051,
     'lpc11u35_arm_watch_nrf51_if': 0x5052,
     'lpc11u35_archlink_if': 0x9013,
+    'lpc11u35_blueninja_if': 0x7010,
 }
 
-# Maps the target test application to the ID of the board it is built to run 
+# Maps the target test application to the ID of the board it is built to run
 # on.
 #
-# If the application is built on the fly using the RESTful Compile API, the 
-# map key must correspond to one of the boards on 
+# If the application is built on the fly using the RESTful Compile API, the
+# map key must correspond to one of the boards on
 # https://developer.mbed.org/platforms/{board name here}
 #
 # If the application is pre-built and supplied via --targetdir, the map
 # key is the target application filename sans extension. Note that the key
-# is also used as the board name in the test output. Thus, name the target 
+# is also used as the board name in the test output. Thus, name the target
 # application after the  board to avoid confusing results.
 #
 TARGET_NAME_TO_BOARD_ID = {
@@ -105,6 +106,7 @@ TARGET_NAME_TO_BOARD_ID = {
     #lpc11u35_arm_watch_efm32_if
     #lpc11u35_arm_watch_nrf51_if
     'Seeed-Arch-Link': 0x9013,
+    'BlueNinja': 0x7010,
 }
 
 BOARD_ID_LOCKED_WHEN_ERASED = set([
