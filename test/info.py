@@ -131,6 +131,7 @@ TARGET_WITH_BAD_VECTOR_TABLE_LIST = [
     'RedBearLab-BLE-Nano',
     'Seeed-Tiny-BLE',
     'Seeed-Arch-Link',
+    'BlueNinja',
 ]
 
 BOARD_ID_TO_BUILD_TARGET = {v: k for k, v in TARGET_NAME_TO_BOARD_ID.items()}
